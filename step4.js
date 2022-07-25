@@ -21,11 +21,11 @@ const fetcher = async type => {
 <FlatList
   // data={users}
   // renderItem={renderItem}
-  refreshing={refreshing}
   onRefresh={() => {
     setRefreshing(true);
     fetcher('refresh');
   }}
+  refreshing={refreshing}
   // keyExtractor={item => item.email}
   // ListFooterComponent={renderLoader}
   // onEndReached={loadMoreItem}
